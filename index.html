@@ -11,7 +11,7 @@
 <body>
     <!--first page-->
    <div class="start_container">
-        <p>PLease click the below button for inserting,updating and Searching records</p>
+        <p>PLease click the below button for inserting,updating Searching,deleting records</p>
         <div class="hand-down">
             <i class="fa fa-hand-o-down" style="font-size:48px;color:chartreuse"></i>
           </div>
@@ -24,12 +24,12 @@
         <div><p id="para">Click this For <i id="hand-right" class="fa fa-hand-o-right" style="font-size:25px"></i><button id="insert">Inserting records</button></p></div>
     </div>
     <div class="insertContainer">
-        <div><p id="para">Click this For <i id="hand-right" class="fa fa-hand-o-right" style="font-size:25px"></i><button id="update">updating records</button></p></div>
+        <div><p id="para">Click this For <i id="hand-right" class="fa fa-hand-o-right" style="font-size:25px"></i><button id="update">Updating records</button></p></div>
     </div>
     <div class="insertContainer">
         <div><p id="para">Click this For <i id="hand-right" class="fa fa-hand-o-right" style="font-size:25px"></i><button id="search">Search records</button></p></div>
     </div>
-        <div class="insertContainer">
+    <div class="insertContainer">
         <div><p id="para">Click this For <i id="hand-right" class="fa fa-hand-o-right" style="font-size:25px"></i><button id="delete">Delete records</button></p></div>
     </div>
 </div>
@@ -76,12 +76,13 @@
 </form>
 <button class="backbtn">Back</button>
 </div>
-    
-    <!--Third Deleting page-->
+
+
+<!--Third Deleting page-->
 <div class="containerFourth">
-    <form action="http://localhost:5678/searchfun" target="fre" class="form_controler" method="get">
+    <form action="http://localhost:5678/deletefun" target="fre" class="form_controler" method="get">
         <h1>Delete data</h1>
-        <input type="text" name="t1" placeholder="Enter Your register No">
+        <input type="text" name="t3" placeholder="Enter Your register No">
         <div id="buttons">
             <button id="btn">Submit</button>
         </div>
