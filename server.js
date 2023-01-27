@@ -96,15 +96,15 @@ app.get('/searchfun',function(req,res){
         res.send("result:"+ans)
      }
      else{
-         res.send("<h1><center>register name not found....Enter volid name.....</h1>")
+         res.send("<h1><center>register name not found....Enter valid name.....</h1>")
      }
          db.close()
      })
  })
  })
 
-app.get('/deletefun',function(req,res){
-    var rno3=parseInt(req.query['t1'])
+ app.get('/deletefun',function(req,res){
+    var rno3=parseInt(req.query['t3'])
 
 
 mongoClient.connect(url,(err,db)=>{
