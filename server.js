@@ -103,6 +103,27 @@ app.get('/searchfun',function(req,res){
  })
  })
 
+app.get('/deletefun',function(req,res){
+    var rno1=parseInt(req.query['t1'])
+
+
+mongoClient.connect(url,(err,db)=>{
+    var dbo=db.db("student")
+    if(err) throw err
+
+    dbo.collection("dis").deleteMany(({rno:rno1}),(err,res1)=>{
+        if(err) throw err
+        console.log("Delete success")
+
+        if(res1.deletedCount>0)
+        res.send("Delete successfully:"+rno1)
+        else
+        res.send("register number not found:"+rno1)
+        db.close()
+    })
+})
+})
+
 
 var server=app.listen(5678,function(){
     var port=server.address().port
