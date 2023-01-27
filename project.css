@@ -196,7 +196,7 @@ i{
     grid-template-columns: 200px;
     height: 450px;
     width: 400px;
-    background-image: -webkit-linear-gradient(goldenrod,lightgreen,greenyellow);
+    background-image: -webkit-linear-gradient(yellow,green,red);
     margin: 0 auto;
     position: relative;
 }
