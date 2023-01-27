@@ -8,7 +8,8 @@ var containerSecond=document.querySelectorAll('.containerSecond')
 var updatebtn=document.getElementById('update')
 var containerThird=document.querySelectorAll(".containerThird")
 var searchbtn=document.getElementById('search')
-
+var containerFourth=document.querySelectorAll(".containerFourth")
+var deletebtn=document.getElementById('delete')
 
 //for enter into a second page
 strContainer.forEach((secondpage)=>{
@@ -59,8 +60,9 @@ strContainer.forEach((secondpage)=>{
                     searchpage.style.display='none'
                     totalContainer[0].classList.add('active')
                 })
-                
-                  //for enter into delete page
+            })
+
+            //for enter into delete page
             containerFourth.forEach((deletepage)=>{
                 deletepage.style.display='none'
 
@@ -74,8 +76,6 @@ strContainer.forEach((secondpage)=>{
                     deletepage.style.display='none'
                     totalContainer[0].classList.add('active')
                 })
-            })
-           
             })
    })
   })
