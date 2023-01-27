@@ -111,14 +111,14 @@ mongoClient.connect(url,(err,db)=>{
     var dbo=db.db("student")
     if(err) throw err
 
-    dbo.collection("dis").deleteMany(({rno:rno2}),(err,res1)=>{
+    dbo.collection("dis").deleteOne(({rno:rno2}),(err,res1)=>{
         if(err) throw err
         console.log("Delete success")
 
         if(res1.deletedCount>0)
-        res.send("Delete successfully:"+rno1)
+        res.send("Delete successfully:"+rno2)
         else
-        res.send("register number not found:"+rno1)
+        res.send("register number not found:"+rno2)
         db.close()
     })
 })
