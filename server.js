@@ -104,14 +104,14 @@ app.get('/searchfun',function(req,res){
  })
 
 app.get('/deletefun',function(req,res){
-    var rno1=parseInt(req.query['t1'])
+    var rno2=parseInt(req.query['t1'])
 
 
 mongoClient.connect(url,(err,db)=>{
     var dbo=db.db("student")
     if(err) throw err
 
-    dbo.collection("dis").deleteMany(({rno:rno1}),(err,res1)=>{
+    dbo.collection("dis").deleteMany(({rno:rno2}),(err,res1)=>{
         if(err) throw err
         console.log("Delete success")
 
