@@ -59,8 +59,8 @@ strContainer.forEach((secondpage)=>{
                     searchpage.style.display='none'
                     totalContainer[0].classList.add('active')
                 })
-            })
-             //for enter into delete page
+                
+                  //for enter into delete page
             containerFourth.forEach((deletepage)=>{
                 deletepage.style.display='none'
 
@@ -74,6 +74,8 @@ strContainer.forEach((secondpage)=>{
                     deletepage.style.display='none'
                     totalContainer[0].classList.add('active')
                 })
+            })
+           
             })
    })
   })
