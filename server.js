@@ -104,21 +104,21 @@ app.get('/searchfun',function(req,res){
  })
 
 app.get('/deletefun',function(req,res){
-    var rno2=parseInt(req.query['t1'])
+    var rno3=parseInt(req.query['t1'])
 
 
 mongoClient.connect(url,(err,db)=>{
     var dbo=db.db("student")
     if(err) throw err
 
-    dbo.collection("dis").deleteOne(({rno:rno2}),(err,res1)=>{
+    dbo.collection("dis").deleteOne(({rno:rno3}),(err,res1)=>{
         if(err) throw err
         console.log("Delete success")
 
         if(res1.deletedCount>0)
-        res.send("Delete successfully:"+rno2)
+        res.send("Delete successfully:"+rno3)
         else
-        res.send("register number not found:"+rno2)
+        res.send("register number not found:"+rno3)
         db.close()
     })
 })
