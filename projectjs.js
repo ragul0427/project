@@ -60,6 +60,21 @@ strContainer.forEach((secondpage)=>{
                     totalContainer[0].classList.add('active')
                 })
             })
+             //for enter into delete page
+            containerFourth.forEach((deletepage)=>{
+                deletepage.style.display='none'
+
+                deletebtn.addEventListener('click',()=>{
+                    totalContainer[0].classList.remove('active')
+                    deletepage.style.display='block'
+                   })
+
+                    //get back from delete page
+                backbtn[3].addEventListener('click',()=>{
+                    deletepage.style.display='none'
+                    totalContainer[0].classList.add('active')
+                })
+            })
    })
   })
 })
